@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.new_kasirpedia">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.New_kasirpedia">
+        <activity
+            android:name=".detail_akun"
+            android:exported="true" />
+        <activity
+            android:name=".kontak"
+            android:exported="true" />
+        <activity
+            android:name=".akun"
+            android:exported="true" />
+        <activity
+            android:name=".keranjang_transaksi"
+            android:exported="true" />
+        <activity
+            android:name=".favorites"
+            android:exported="true" />
+        <activity
+            android:name=".calculator"
+            android:exported="true" />
+        <activity
+            android:name=".home"
+            android:exported="true" />
+        <activity
+            android:name=".pembayaran_sukses"
+            android:exported="true" />
+        <activity
+            android:name=".petunjuk_pembayaran"
+            android:exported="true" />
+        <activity
+            android:name=".metode_pembayaran"
+            android:exported="true" />
+        <activity
+            android:name=".berlangganan"
+            android:exported="true" />
+        <activity
+            android:name=".informasi_bisnis"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:exported="true" />
+        <activity
+            android:name=".daftar"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

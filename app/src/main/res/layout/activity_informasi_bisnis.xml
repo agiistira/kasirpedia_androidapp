@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".informasi_bisnis">
+
+    <TextView
+        android:id="@+id/txt_infobisnis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/actor"
+        android:text="@string/informasi_bisnis"
+        android:textColor="#FFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_info_bisnis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_infobisnis"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/actor"
+        android:text="@string/txt_informasi_bisnis"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/isi_informasi_bisnis_anda"
+        android:textColor="#FFFF"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/txt_info_bisnis"
+        android:fontFamily="@font/actor"
+        android:id="@+id/isi_infobisnis"/>
+
+    <EditText
+        android:id="@+id/kolom_namabisnis"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/isi_infobisnis"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bar_kolom"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/nama_bisnis"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/kolom_namabisnis"
+        android:background="@drawable/bar_kolom"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:hint="@string/kolom_jenis_bisnis"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="@font/poppins"
+        android:id="@+id/kolom_jenisbisnis"/>
+
+    <EditText
+        android:id="@+id/kolom_lokasibisnis"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/kolom_jenisbisnis"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bar_kolom"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/lokasi_bisnis"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <ImageButton
+        android:id="@+id/btn_lanjut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolom_lokasibisnis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_lanjut" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".berlangganan">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_berlangganan"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/actor"
+        android:id="@+id/back_berlangganan" />
+
+    <ImageView
+        android:layout_width="73dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/back_berlangganan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/verif"
+        android:id="@+id/logo_verif"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_akun_anda_sudah_diverifikasi"
+        android:layout_below="@id/logo_verif"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:fontFamily="@font/actor"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:id="@+id/txt_verif"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_verif"
+        android:fontFamily="@font/merriweather_sans"
+        android:text="@string/pilih_metode_berlangganan"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:id="@+id/txt_metode_berlangganan"/>
+
+    <TextView
+        android:id="@+id/kolom_dark"
+        android:layout_width="350dp"
+        android:layout_height="133dp"
+        android:layout_below="@id/txt_metode_berlangganan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dark_bar" />
+
+    <EditText
+        android:id="@+id/kolom_basic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/kolom_dark"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/basic" />
+
+    <TextView
+        android:id="@+id/txt_menggunakanfitur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolom_basic"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/merriweather_sans"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp"
+        android:text="@string/menggunakan_fitur_yang_tersedia"
+        android:textColor="#FFFAFA"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt_laporan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_menggunakanfitur"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/merriweather_sans"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp"
+        android:text="@string/laporan_lebih_lengkap"
+        android:textColor="#FFFAFA"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt_outlet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_laporan"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/merriweather_sans"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp"
+        android:text="@string/kelola_multi_outlet_dalam_satu_akun"
+        android:textColor="#FFFAFA"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/light_bar"
+        android:layout_width="350dp"
+        android:layout_height="133dp"
+        android:layout_below="@id/kolom_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/light_bar" />
+
+    <EditText
+        android:id="@+id/kolom_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/light_bar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pro" />
+
+    <TextView
+        android:id="@+id/txt_menggunakanfiturpro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolom_pro"
+        android:fontFamily="@font/merriweather_sans"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp"
+        android:text="@string/txt_menggunakan_semua_fitur_yang_tersedia"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt_laporanpro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_menggunakanfiturpro"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/merriweather_sans"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp"
+        android:text="@string/_2_laporan_keuangan_pro"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_outletpro"
+        android:layout_below="@id/txt_laporanpro"
+        android:layout_marginTop="10dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/merriweather_sans"
+        android:textColor="#000"
+        android:id="@+id/txt_outletpro"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_inventori_pro"
+        android:layout_below="@id/txt_outletpro"
+        android:layout_marginTop="10dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/merriweather_sans"
+        android:textColor="#000"
+        android:id="@+id/txt_inventoripro"/>
+
+    <ImageButton
+        android:id="@+id/btn_berlangganan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/light_bar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mulai_berlangganan" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/coba_gratis"
+        android:layout_below="@id/btn_berlangganan"
+        android:textAlignment="center"
+        android:fontFamily="@font/actor"
+        android:id="@+id/txt_cobagratis"/>
+
+
+
+
+
+
+</RelativeLayout>

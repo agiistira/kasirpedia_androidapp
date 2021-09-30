@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".metode_pembayaran">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_pilih_metode_pembayaran"
+        android:fontFamily="@font/roboto"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#000"
+        android:id="@+id/back_pembayaran"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_pilih_metode_pembayaran"
+        android:layout_below="@id/back_pembayaran"
+        android:textColor="#000"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/txt_metode_pembayaran" />
+
+    <ImageButton
+        android:layout_width="350dp"
+        android:layout_height="37dp"
+        android:background="@drawable/bri"
+        android:layout_below="@id/txt_metode_pembayaran"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_bri"/>
+
+    <ImageButton
+        android:layout_width="350dp"
+        android:layout_height="37dp"
+        android:background="@drawable/bca"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/btn_bri"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_bca" />
+
+    <ImageButton
+        android:layout_width="350dp"
+        android:layout_height="37dp"
+        android:background="@drawable/dana"
+        android:layout_below="@id/btn_bca"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_dana"/>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_dana"
+        android:layout_marginTop="50dp"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_jumlah_yang_harus_dibayarkan"
+        android:textColor="#000"
+        android:layout_below="@id/line"
+        android:fontFamily="@font/roboto"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_jumlah" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/harga_basic"
+        android:layout_below="@+id/txt_jumlah"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+        android:id="@+id/txt_hargabasic"/>
+
+    <ImageButton
+        android:id="@+id/btn_bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_jumlah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_bayar" />
+
+
+
+
+
+</RelativeLayout>

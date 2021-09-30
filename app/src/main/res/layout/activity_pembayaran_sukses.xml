@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".pembayaran_sukses">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_pembayaran_sukes"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:id="@+id/txt_pembayaransukses"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/verif"
+        android:layout_below="@id/txt_pembayaransukses"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/verif"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pembayaran_berhasil_di_lakukan"
+        android:textColor="@color/white"
+        android:layout_below="@id/verif"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_pembayaranberhasil"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_pembayaranberhasil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:id="@+id/btn_lanjutkan"
+        android:background="@drawable/btn_lanjut" />
+
+
+
+</RelativeLayout>

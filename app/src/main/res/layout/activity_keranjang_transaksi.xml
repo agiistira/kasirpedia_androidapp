@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="38dp"
+            android:layout_height="39dp"
+            android:background="@drawable/ic_more"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/ic_more"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_user"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transaksi"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="33sp"
+            android:layout_marginTop="60dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="@string/belum_ada_transaksi_apapun"
+        android:layout_marginTop="180dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="154dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#42474E"
+            android:layout_marginTop="130dp"
+            android:text="+ Transaksi"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"
+            android:textColor="#55B2AB"
+            android:layout_marginStart="200dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_bawah"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="48dp"
+                android:id="@+id/btn_calculator"
+                android:background="@drawable/calculator" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/star" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/home" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/keranjang" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/ic_grafik" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/calculator"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/favorites"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:layout_marginStart="22dp"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:layout_marginStart="29dp"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/transaksi"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reports"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:layout_marginStart="5dp"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

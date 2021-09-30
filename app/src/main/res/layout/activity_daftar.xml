@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".daftar">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar"
+        android:id="@+id/bg_bar" />
+
+    <TextView
+        android:id="@+id/backtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg_bar"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/back_daftar"
+        android:textColor="#FFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backtext"
+        android:text="@string/txt_daftar_akun"
+        android:textColor="#FFFF"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:id="@+id/txt_daftar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_daftar"
+        android:text="@string/txt_daftarsekarang"
+        android:textColor="#FFFF"
+        android:fontFamily="@font/roboto"
+        android:layout_marginStart="20dp"
+        android:id="@+id/txt_daftarsekarang"/>
+
+    <EditText
+        android:id="@+id/kolom_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_daftarsekarang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bar_kolom"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/hint_nama_lengkap"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolom_nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bar_kolom"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/kolom_email"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/kolom_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolom_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bar_kolom"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/kolom_no_telepon"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/kolom_notelepon"/>
+
+    <EditText
+        android:id="@+id/kolom_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolom_notelepon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bar_kolom"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/kolom_password"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+
+
+
+    <ImageButton
+        android:id="@+id/btn_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kolom_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_daftar" />
+
+
+
+</RelativeLayout>

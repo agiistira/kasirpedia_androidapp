@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".menu_contactus">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_system_bar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/darksystem"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titik"
+        android:layout_below="@+id/darksystem"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/titik"/>
+
+    <ImageView
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/darksystem"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ellipse4"
+        android:id="@+id/profile"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textColor="#34393F"
+        android:textSize="30sp"
+        android:layout_below="@+id/darksystem"
+        android:textAlignment="center"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/contact"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/email"
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:id="@+id/email"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message"
+        android:layout_below="@id/email"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:id="@+id/message"/>
+
+
+</RelativeLayout>

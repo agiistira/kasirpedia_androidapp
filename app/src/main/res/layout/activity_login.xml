@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/backlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/back_login"
+        android:textColor="#FFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selamat_datang_kembali"
+        android:textColor="#FFFF"
+        android:layout_below="@+id/backlogin"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/actor"
+        android:id="@+id/txt_selamatdatang"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/silahkan_masuk_dengan_akun_anda"
+        android:textColor="#FFFF"
+        android:layout_below="@+id/txt_selamatdatang"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/actor"
+        android:id="@+id/silahkan_masuk"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_kolom"
+        android:layout_below="@+id/silahkan_masuk"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/email"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="@font/poppins"
+        android:id="@+id/login_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_kolom"
+        android:layout_below="@+id/login_email"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/password"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="@font/poppins"
+        android:id="@+id/login_password"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lupa_kata_sandi"
+        android:textColor="#FFFF"
+        android:layout_below="@+id/login_password"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/actor"
+        android:id="@+id/txt_forgot"/>
+
+    <ImageButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_forgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="masuk"
+        android:background="@drawable/btn_login" />
+
+    <TextView
+        android:id="@+id/txt_belumpunyaakun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:fontFamily="@font/actor"
+        android:text="@string/tidak_punya_akun_buat_akun"
+        android:textAlignment="center"
+        android:onClick="daftar"
+        android:textColor="#FFFF" />
+
+
+
+</RelativeLayout>
